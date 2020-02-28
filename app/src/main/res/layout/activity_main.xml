@@ -19,16 +19,30 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:gravity="center"
-        android:id="@+id/FlagActBut"
+    android:gravity="center"
+    android:id="@+id/FlagActBut"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Флаг"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.399" />
+
+    <Button
+        android:id="@+id/rectActBut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Флаг"
+        android:gravity="center"
+        android:text="Линии"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399" />
+        app:layout_constraintTop_toBottomOf="@+id/BallActBut"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

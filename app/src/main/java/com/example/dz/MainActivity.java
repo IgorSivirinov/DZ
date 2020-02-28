@@ -8,13 +8,22 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button ballActBut,flagActBut;
+    private Button ballActBut,flagActBut,rectActBut;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ballActBut=findViewById(R.id.BallActBut);
         flagActBut=findViewById(R.id.FlagActBut);
+        rectActBut=findViewById(R.id.rectActBut);
+
+        rectActBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent rectIntent=new Intent (MainActivity.this,RectActivity.class);
+                startActivity(rectIntent);
+            }
+        });
         ballActBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
